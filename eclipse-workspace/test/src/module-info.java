@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author synerzip
+ *
+ */
+module test {
+}

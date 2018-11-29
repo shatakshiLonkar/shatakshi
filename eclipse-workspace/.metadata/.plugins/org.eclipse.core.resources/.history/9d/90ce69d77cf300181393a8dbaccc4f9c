@@ -1,0 +1,24 @@
+package com.tdd.learn;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class PrimeFactorsTest 
+{
+	PrimeFactors pFact;
+	@BeforeEach
+	void setUp() throws Exception
+	{
+		pFact=new PrimeFactors);
+	}
+
+	@Test
+	void testGetFactors() {
+		fail("Not yet implemented");
+	}
+
+}

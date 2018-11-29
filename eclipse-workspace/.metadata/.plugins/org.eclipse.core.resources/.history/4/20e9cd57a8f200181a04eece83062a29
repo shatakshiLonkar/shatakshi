@@ -1,0 +1,5 @@
+package com.tdd.learn;
+
+public interface FindPrime {
+
+}

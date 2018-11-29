@@ -1,0 +1,6 @@
+package com.tdd.learn;
+
+public interface FindFactors
+{
+	List<Integer> getFactos(int number);
+}

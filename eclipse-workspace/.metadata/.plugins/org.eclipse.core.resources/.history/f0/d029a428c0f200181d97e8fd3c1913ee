@@ -1,0 +1,23 @@
+package com.tdd.learn;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrimeFactors implements FindFactors {
+
+	@Override
+	public List<Integer> getFactors(int number) {
+		// TODO Auto-generated method stub
+		List<Integer> pFact=new ArrayList<Integer>();
+		if(number==1)
+			pFact=null;
+		if(number%2==0)
+		{
+			pFact.add(number);
+			number/=2;
+		}
+		
+		return pFact;
+	}
+
+}

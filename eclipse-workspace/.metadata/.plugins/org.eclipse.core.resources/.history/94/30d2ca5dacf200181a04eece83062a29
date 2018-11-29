@@ -1,0 +1,53 @@
+package com.tdd.learn;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class PrimeFactorsTest 
+{
+	PrimeFactors aFact;
+	@BeforeEach
+	void setUp() throws Exception 
+	{
+		aFact=new PrimeFactors();
+	}
+	List<Integer> ConvertTo(int...number)
+	{
+		List<Integer> gFact=new ArrayList<Integer>();
+		for(int NO:number)
+			gFact.add(NO);
+		return gFact;
+	}
+
+	@Test
+	void testGetFactors01() {
+		assertEquals(null,aFact.getFactors(1));
+	}
+	@Test
+	void testGetFactors2() {
+		assertEquals(ConvertTo(2),aFact.getFactors(2));
+	}
+
+	@Test
+	void testGetFactors3() {
+		assertEquals(ConvertTo(3),aFact.getFactors(3));
+	}
+	@Test
+	void testGetFactors4() {
+		assertEquals(ConvertTo(2,2),aFact.getFactors(4));
+	}
+	@Test
+	void testGetFactors5() {
+		assertEquals(ConvertTo(2,2,2),aFact.getFactors(8));
+	}
+	@Test
+	void testGetFactors6() {
+		assertEquals(ConvertTo(3,3),aFact.getFactors(9));
+	}
+
+}
